@@ -1,0 +1,342 @@
+/*----------------------------------------------------------------------------------------*/
+
+@font-face { font-family: NRT; src: url('Font/NRT-Bd.ttf'); } 
+
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:NRT ;
+}
+
+html, body {
+    height: 100vh;
+    overflow: hidden;
+    background-color:#eee ;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+  }
+
+::selection{
+    background-color: #303030;
+    color: #ffc60a;
+}
+
+.root{
+    --color-light:#ffffff;
+    --color-dark:#000000;
+     --color-blue:#1877f2;
+      --color-yellow:#ffc60a;
+       --color-pirple:#bb00ff;
+       --color-green:#00db00;
+       --color-red:#ff0000;
+       --color-red:#ff08ff;   
+}
+#red {
+    color:#fff;
+    background-color: #ff0000;
+}
+#blue {
+    color:#fff;
+    background-color: #1877f2;
+}
+#green {
+    color:#fff;
+    background-color: #00db00;
+}
+#purple {
+    color:#fff;
+    background-color: #bb00ff;
+}
+#yellow {
+    color:#fff;
+    background-color: #ffc60a;
+}
+#pink {
+    color:#fff;
+    background-color: #ff08ff;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.navbar {
+    box-shadow: hsl(0, 0%, 100%) 0px 0px 60px 1px;
+}
+
+
+.snap-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+/* Body Styling */
+body {
+    
+    /* ...existing background styles... */
+    scroll-snap-type: y mandatory;
+    overflow-y: auto; /* Make sure this is 'auto' or 'scroll' */
+    min-height: 100vh;
+    scroll-behavior: smooth;
+
+    height: 100vh;
+
+background: #ffffff;
+background: linear-gradient(160deg, #ffffff 0%, #ffffff 50%, #bacdff 100%);
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit; /* Inherits the background image from the body */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: blur(5px); /* Adjust the blur intensity */
+    z-index:-2; /* Places the blurred layer behind the content */
+}
+
+
+
+
+
+
+.section {
+    min-height: 100vh;
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Remove extra padding/margin if any */
+    padding: 0;
+    margin: 0;
+
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+}
+
+.login-form input {
+    padding: 10px;
+    border: 3px solid #1877f2;
+    border-radius: 5px;
+    text-align: right;
+}
+.login-form button {
+    padding: 10px;
+    border: none;
+    background-color: #1877f2;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form a{
+  text-align: right;
+  padding: 15px;
+  border-radius: 5px;
+    color: #ffffff;
+    background-color: #1877f2;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+
+
+
+.dashboard {
+    margin: 25px;
+    width: 750px;
+    height: 400px;
+    position: fixed;
+    background-color: #fff;
+    border-radius: 10px;
+    border: solid #d2d2d2 1px;
+    display: flex;
+
+
+}
+
+.dashboard ul li{
+    margin: 20PX;
+    list-style: none;
+}
+
+.dashboard input {
+    padding: 10px;
+    border: #303030 solid 1px;
+    border-radius: 50px;
+}
+
+
+
+.menu{
+    width: 220px;
+    height: 100vh;
+    padding: 10px ;
+    background-color: #303030;
+    position: fixed;
+    right: 0px;
+}
+.menu-text{
+    margin-top: 10px;
+    background-color: #5f5f5f;
+    padding: 10px;
+    color: #ffffff;
+    align-items: end;
+    justify-content: end;
+    display: flex;
+}
+
+
+
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+
+    
+}
+
+@media (max-width: 480px) {
+
+        .section {
+        min-height: 100vh;
+        height: 100vh;
+        width: 100vw;
+        padding: 20px;
+    }
+
+
+    .section {
+    min-height: 100vh;
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+    display: flex;
+
+    grid-template-rows: 300px 300px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Remove extra padding/margin if any */
+    padding: 0;
+    margin: 0;
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.container{
+    position: relative;
+    padding: 100px;
+    margin-bottom:200px ;
+}
+
+
+
+
+.img-fluid{
+    border-radius: 50%;
+}
+
+
+
+  /* Custom Footer Styling */
+footer {
+    background-color: #212121;
+    color: white;
+    padding: 40px 0;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #5f5f5f; /* Change color on hover */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #5f5f5f; /* Change color on hover */
+}
+
+.footer-right a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-right a:hover {
+    color: #5f5f5f; /* Change color on hover */
+}

@@ -1,0 +1,47 @@
+1- All link list
+
+2- using kurdish font
+
+3- use the root
+
+4- useing fontawasome for icon
+
+5- useing bootstrap for navbar - card
+
+6- the website must have dark mode
+
+7- the website should be Responsive
+
+/--- content ---/
+welcome
+cv 
+news
+language rage 
+skill
+experience
+course
+compass gruop and join
+download app
+
+about
+friend
+donate
+contact
+fotter link
+
+/--- tool ---/
+
+html
+css
+js
+php
+bootstrap
+python
+access.db
+react.js
+xampp
+fontwasome
+photoshop
+vs code
+chrome
+Ai
